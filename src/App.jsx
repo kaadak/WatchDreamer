@@ -8,7 +8,7 @@ import Contact from './assets/pages/Contact.jsx'
 
 const App = () => {
   return (
-    <Router>
+    <Router >
       <Header/>
 
       <Routes>
