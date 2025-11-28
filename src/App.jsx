@@ -1,10 +1,23 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './assets/components/Header.jsx'
+import Home from './assets/pages/Home.jsx'
+import About from './assets/pages/About.jsx'
+import Service from './assets/pages/Service.jsx'
+import Contact from './assets/pages/Contact.jsx'
 
 const App = () => {
   return (
-    <div>
-      <h1 className='bg-red-500 p-4 text-center text-white'>Welcome to react</h1>
-    </div>
+    <Router>
+      <Header/>
+
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/service' element={<Service/>}/>
+      </Routes>
+    </Router>
   )
 }
 
