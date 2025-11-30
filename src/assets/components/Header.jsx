@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div  className=''>
-      <div className=' bg-primary backdrop-blur-md text-md  container font-display left-0 right-0 fixed top-0 mx-auto p-4 items-center flex justify-between'>
+      <div className=' bg-primary backdrop-blur-md text-md  container font-display left-0 right-0 fixed top-0 mx-auto p-4 items-center z-50 flex justify-between'>
 
 
       {/* logo */}
@@ -44,7 +44,7 @@ const Header = () => {
 
 
     {show && (
-      <div className='fixed font-display top-0 left-0 bottom-0 p-4 bg-primary w-[50%]'>
+      <div className='fixed font-display z-50 top-0 left-0 bottom-0 p-4 bg-primary w-[50%]'>
       <div className='flex gap-3 items-center'>
           <img src={logo} alt="" className='w-15 h-auto'/>
           <h3 className='font-bold text-lg text-secondary'>WATCHDREAMER</h3>
@@ -52,11 +52,11 @@ const Header = () => {
 
         <nav className='containter py-8 relative gap-8 mt-5 text-md  text-left   flex flex-col w-full text-white'>
         <Link to="/" className='w-full group   relative  border-white'>Home
-        <span className='absolute bottom-0 w-0 group-hover:w-full  hover:w-full left-0 transform duration-200 bg-white h-0.5'></span></Link>
+        <span className='absolute bottom-0 w-0 group-hover:w-full  hover:w-full left-0 transform duration-200 bg-secondary h-0.5'></span></Link>
         <Link to="/about" className='w-full group   relative  border-white'>About
-        <span className='absolute bottom-0 w-0 group-hover:w-full  hover:w-full left-0 transform duration-200 bg-white h-0.5'></span></Link>
+        <span className='absolute bottom-0 w-0 group-hover:w-full  hover:w-full left-0 transform duration-200 bg-secondary h-0.5'></span></Link>
         <Link to="/service" className='w-full group  relative  border-white'>Service
-        <span className='absolute bottom-0 w-0 group-hover:w-full  hover:w-full left-0 transform duration-200 bg-white h-0.5'></span></Link>
+        <span className='absolute bottom-0 w-0 group-hover:w-full  hover:w-full left-0 transform duration-200 bg-white  h-0.5'></span></Link>
         <Link to="/contact" className='w-full group  relative  border-white'>Contact
         <span className='absolute bottom-0 w-0 group-hover:w-full  hover:w-full left-0 transform duration-200 bg-white h-0.5'></span></Link>
         </nav>

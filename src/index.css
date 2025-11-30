@@ -11,3 +11,60 @@
 
 
 }
+
+.slide-text {
+  animation: slideDown 0.7s ease forwards;
+}
+
+.slide-image {
+  animation: slideUp 0.7s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+body { 
+  font-family: var(--font-display); 
+};
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* hidden state for elements before scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* animation class */
+.slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}

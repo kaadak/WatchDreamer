@@ -9,7 +9,8 @@ import Contact from './assets/pages/Contact.jsx'
 const App = () => {
   return (
     <Router >
-      <Header/>
+      <div className='bg-primary min-h-screen'>
+        <Header/>
 
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/service' element={<Service/>}/>
       </Routes>
+      </div>
     </Router>
   )
 }

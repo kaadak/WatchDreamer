@@ -1,11 +1,18 @@
-import React from 'react'
+import Hero from "../components/Hero";
+import Sale from "../components/Sale";
+import Features from "../components/Features";
 
 const Home = () => {
-  return (
-    <div className='bg-primary min-h-screen flex justify-center items-center'>
-      This is the homepage
-    </div>
-  )
-}
 
-export default Home
+
+  return (
+    <div>
+      <Hero/>
+      <Sale/>
+      <Features/>
+    </div>
+
+  );
+};
+
+export default Home;
