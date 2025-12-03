@@ -47,7 +47,7 @@ const Hero = () => {
             Welcome to
           </p>
         )}
-        <h1 className="text-secondary text-center md:text-left text-5xl md:text-6xl font-bold  font-display">
+        <h1 className="text-secondary text-center  text-5xl md:text-7xl font-bold  font-display">
           {currentSlide.title}
         </h1>
         <p className="text-white text-center font-medium text-sm tracking-tight">

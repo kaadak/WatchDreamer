@@ -10,8 +10,8 @@ const Header = () => {
   const[show, setShow] = useState(false)
 
   return (
-    <div  className=''>
-      <div className=' bg-primary backdrop-blur-md text-md  container font-display left-0 right-0 fixed top-0 mx-auto p-4 items-center z-50 flex justify-between'>
+    <div  className='left-0 right-0 fixed top-0 z-50 w-full bg-primary'>
+      <div className=' bg-primary backdrop-blur-md text-md  container font-display  mx-auto p-4 items-center  flex justify-between'>
 
 
       {/* logo */}

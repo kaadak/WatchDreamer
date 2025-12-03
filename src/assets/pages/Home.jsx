@@ -1,6 +1,9 @@
 import Hero from "../components/Hero";
 import Sale from "../components/Sale";
 import Features from "../components/Features";
+import Collection from "../components/Collection";
+import Deals from "../components/Deals";
+import Footer from "../components/Footer";
 
 const Home = () => {
 
@@ -10,6 +13,9 @@ const Home = () => {
       <Hero/>
       <Sale/>
       <Features/>
+      <Collection/>
+      <Deals/>
+      <Footer/>
     </div>
 
   );
